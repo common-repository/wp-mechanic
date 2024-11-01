@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.wm-apps-wrapper{
+	float:left;
+	width:100%;
+}
+.wm-apps-wrapper ul{
+	float:left;
+	width:100%;
+}
+.wm-apps-wrapper ul li{
+	float:left;
+	width:220px;
+	height:240px;
+	padding:10px 4px;
+	border:1px solid #A4C639;
+	text-align:center;
+	margin: 0 10px 10px 0;	
+}
+.wm-apps-wrapper ul li:hover,
+.wm-apps-wrapper ul li.configuring{
+	border:1px solid #21759b;
+}
+.wm-apps-wrapper ul li img{
+	height:180px;
+	width:180px;
+}
+.wm-apps-wrapper ul li strong{
+	width:100%;
+	float:left;
+	padding: 0px 0 2px;
+}
+.wm-apps-wrapper ul li .right-part strong{
+	padding: 3px 0 3px;
+}
+.wm-apps-wrapper ul li div{
+	float:left;
+	width:100%;
+}
+.wm-apps-wrapper ul li div.wm-qrcode-body{
+	height:180px;
+}
+.wm-apps-wrapper ul li a{
+	float:left;
+	width:45.7%;
+	cursor:pointer;
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+	padding:6px 4px;
+	text-decoration:none;
+}
+.wm-apps-wrapper ul li a.download_app{
+	background-color:#A4C639;
+}
+.wm-apps-wrapper ul li a.configure_app{
+	background-color:#21759b;
+}
+.wm-apps-wrapper ul li a.disconnect_app,
+.wm-apps-wrapper ul li a.connect_app {
+	background-color: #FF2424;
+	width: 90%;
+	margin: 0 0 0 10px;
+}
+.wm-apps-wrapper ul li a.connect_app {
+	background-color: #36F;
+}
+.wm-apps-wrapper ul li div.right-part{
+	display:none;
+}
+.wm-apps-wrapper ul li.configuring{
+	width:410px;	
+}
+.wm-apps-wrapper ul li.configuring div.left-part{
+	float:left;
+	width:220px;
+}
+.wm-apps-wrapper ul li.configuring div.right-part{
+	display:inline-block;
+	width:190px;
+	float:left;
+}
+
+.wm-apps-wrapper .wm-qrcode-view{
+	float: left;
+	height: auto;	
+	clear: both;
+	cursor: pointer;
+	position: relative;
+	
+}
+
+.wm-apps-wrapper .wm-qrcode-view .qr-sample {
+
+	max-width: 100%;
+	height: auto;
+	position: absolute;
+	right: 0;
+
+}
+
+.wm-apps-wrapper .wm-qrcode-view .google-badge-img {
+	width: auto;
+	height: 75px;
+	top: 0;
+	position:absolute;
+
+}
+
+.wm-apps-wrapper .qr-modal{
+	display: none;
+	position:fixed;
+	z-index: 50000;
+	top:0;
+	left:0;
+	width: 100%;
+	height:100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.6);
+}
+
+
+.wm-apps-wrapper .qr-modal .modal-content {
+
+	margin: auto;	
+	width: 40%;
+	text-align: center;
+	padding-top: 100px;
+
+}
+
+.wm-apps-wrapper .qr-modal .modal-content .qr-loading {
+
+	font-size: 2rem;
+	color: white;
+} 
+
+
+.wm-apps-wrapper .wm-qrcode-img img {
+	widows: 100%;
+	height: auto;
+}
+
+.wm-apps-wrapper .qr-modal .qr-modal-close {
+	color: tomato;
+	float: right;
+	font-size: 50px;
+	/* font-weight: bold; */
+	margin-top: 50px;
+	margin-right: 50px;
+
+}
+
+.wm-apps-wrapper .qr-modal .qr-modal-close:hover,
+.wm-apps-wrapper .qr-modal .qr-modal-close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.wm-apps-wrapper ul li.configuring .loading-qr{
+	opacity:0.1;
+	border:1px solid #21759b;
+	background-color:#21759b;
+}
